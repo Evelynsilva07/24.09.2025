@@ -1,5 +1,5 @@
 class Produto:      
-    def _init_(self, id_produto: int, nome: str, preco: float):
+    def __init__(self, id_produto: int, nome: str, preco: float):  # corrigido __init__
         self.id_produto = id_produto
         self.__nome = nome
         self.__preco = preco
@@ -29,3 +29,7 @@ class Produto:
         return f"Produto(id={self.id_produto}, nome={self.__nome}, preco={self.__preco:.2f})"
     
 p1 = Produto(2, "nome", 850)
+
+p1.nome = "Teclado"
+p1.preco = 100
+print(p1.__repr__())
