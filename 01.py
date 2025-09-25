@@ -1,5 +1,5 @@
 class Produto:      
-    def __init__(self, id_produto: int, nome: str, preco: float):  # corrigido __init__
+    def __init__(self, id_produto: int, nome: str, preco: float): 
         self.id_produto = id_produto
         self.__nome = nome
         self.__preco = preco
